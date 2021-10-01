@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <HelloWorld msg="Website is down for maintenance"/>
+    <HelloWorld msg="The website is temporarily down for maintenance"/>
   </div>
 </template>
 
