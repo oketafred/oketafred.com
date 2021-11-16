@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class=" bg-gray-900 flex justify-center items-center h-screen w-screen">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <HelloWorld msg="The website is temporarily down for maintenance"/>
   </div>
@@ -7,7 +7,6 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
   components: {
@@ -17,12 +16,5 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
