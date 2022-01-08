@@ -4,7 +4,7 @@
       <span class=" text-green-500 text-xl mr-1">
         <CodeIcon />
       </span>
-      <h1 class=" text-xl">Designer</h1>
+      <h1 class=" text-xl">Oketa Fred</h1>
     </div>
     <span @click="menuOpen()" class="absolute md:hidden right-6 top-1.5 cursor-pointer text-4xl">
       <MenuAlt3Icon class="mt-2"/> 
@@ -33,7 +33,7 @@ export default {
   },
   data() {
     return {
-      open: false,
+      open: true,
       links: [
         { name: "Home", url: "#" },
         { name: "Services", url: "#" },
