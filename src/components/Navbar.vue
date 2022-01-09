@@ -4,14 +4,16 @@
       <span class=" text-green-500 text-xl mr-1">
         <CodeIcon />
       </span>
-      <h1 class=" text-xl">Oketa Fred</h1>
+      <router-link to="/">
+        <h1 class=" text-xl">Oketa Fred</h1>
+      </router-link>
     </div>
     <span @click="menuOpen()" class="absolute md:hidden right-6 top-1.5 cursor-pointer text-4xl">
       <MenuAlt3Icon class="mt-2"/> 
     </span>
     <ul class="md:flex md:items-center md:px-0 px-10 md:pb-0 pb-10 md:static absolute left-0 bg-gray-900 md:w-auto w-full top-14 duration-700 ease-in" :class="[open ? 'hidden' : 'block']">
       <li class="-mx-4 md:mx-4 md:my-0 my-6" v-for="link in links" :key="link.name">
-        <a :href="link.url" class="text-xl hover:text-green-500">{{ link.name }}</a>
+        <router-link :to="link.url" class="text-xl hover:text-green-500">{{ link.name }}</router-link>
       </li>
       <li class="-ml-4 md:ml-4">
         <button class="flex bg-green-400 hover:bg-green-500 duration-300 text-sm font-semibold text-white rounded py-1.5 px-4">
@@ -35,10 +37,9 @@ export default {
     return {
       open: true,
       links: [
-        { name: "Home", url: "#" },
-        { name: "Services", url: "#" },
-        { name: "About", url: "#" },
-        { name: "Contact", url: "#" }
+        { name: "Home", url: "/" },
+        { name: "Projects", url: "/projects" },
+        // { name: "Contact", url: "#" }
       ]
     }
   },

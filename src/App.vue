@@ -1,6 +1,7 @@
 <template>
   <div id="app" class="bg-green-400 h-screen">
     <navbar></navbar>
+    <router-view></router-view>
   </div>
 </template>
 
