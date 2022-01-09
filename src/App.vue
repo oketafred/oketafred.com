@@ -1,20 +1,19 @@
 <template>
-  <div id="app" class=" bg-gray-900 flex justify-center items-center h-screen w-screen">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <HelloWorld msg="The website is temporarily down for maintenance"/>
+  <div id="app" class="bg-green-400 h-screen">
+    <navbar></navbar>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Navbar from "./components/Navbar.vue";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Navbar
   }
-}
+};
 </script>
 
 <style>
-
 </style>
