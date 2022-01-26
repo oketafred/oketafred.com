@@ -1,8 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Home from '../views/Home.vue'
-import Projects from '../views/Projects.vue'
+import Home from '../views/Home.vue';
+import Projects from '../views/Projects.vue';
+// import 404 from '../views/404.vue';
+import NotFound from '../views/NotFound.vue';
 
 Vue.use(VueRouter)
 
@@ -17,6 +19,11 @@ const routes = [
     component: Projects, 
     name: 'projects' 
   },
+  {
+    path: '/:pathMatch(.*)*',
+    component: NotFound,
+    name: '404'
+  }
 ];
 
 export default new VueRouter({
