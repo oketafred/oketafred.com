@@ -1,7 +1,9 @@
 <template>
-  <div id="app" class="bg-gray-100">
+  <div id="app">
     <navbar></navbar>
-    <router-view></router-view>
+    <div class="content">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -16,4 +18,7 @@ export default {
 </script>
 
 <style>
+.content {
+  padding-top: 66px;
+}
 </style>

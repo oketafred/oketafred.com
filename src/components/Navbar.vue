@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900 text-gray-100 py-3.5 xl:px-52 sm:px-30 px-6 shadow md:flex justify-between items-center">
+  <div class="bg-gray-900 text-gray-100 py-3.5 xl:px-52 sm:px-30 px-6 shadow md:flex justify-between items-center fixed w-full">
     <div class="flex items-center">
       <span class=" text-green-500 text-xl mr-1">
         <CodeIcon />
@@ -16,9 +16,11 @@
         <router-link :to="link.url" class="text-xl hover:text-green-500">{{ link.name }}</router-link>
       </li>
       <li class="-ml-4 md:ml-4">
-        <button class="flex bg-green-400 hover:bg-green-500 duration-300 text-sm font-semibold text-white rounded py-1.5 px-4">
+        <a href="oketafred-cv-2022.pdf" 
+        download
+        class="flex bg-green-400 cursor-pointer hover:bg-green-500 duration-300 text-sm font-semibold text-white rounded py-1.5 px-4">
           <span><DownloadIcon/></span>
-          Download Resume</button>
+          Download Resume</a>
       </li>
     </ul>
   </div>
