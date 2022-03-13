@@ -13,7 +13,7 @@
     </span>
     <ul class="md:flex md:items-center md:px-0 px-10 md:pb-0 pb-10 md:static absolute left-0 bg-gray-900 md:w-auto w-full top-14 duration-700 ease-in" :class="[open ? 'hidden' : 'block']">
       <li class="-mx-4 md:mx-4 md:my-0 my-6" v-for="link in links" :key="link.name">
-        <router-link :to="link.url" class="text-xl hover:text-green-500">{{ link.name }}</router-link>
+        <router-link :to="link.url" exact active-class="text-green-500" class="text-xl hover:text-green-500">{{ link.name }}</router-link>
       </li>
       <li class="-ml-4 md:ml-4">
         <a href="oketafred-cv-2022.pdf" 
@@ -41,7 +41,6 @@ export default {
       links: [
         { name: "Home", url: "/" },
         { name: "Projects", url: "/projects" },
-        // { name: "Contact", url: "#" }
       ]
     }
   },

@@ -62,7 +62,7 @@
             <div
               class="py-6 mx-auto flex justify-center items-center sm:flex-row flex-col"
             >
-              <p class="sm:ml-6 sm:mt-0 mt-4">
+              <p class="sm:text-sm sm:ml-6 sm:mt-0 mt-4">
                 &copy; {{ getCurrentYear }} - Oketa Fred - All rights reserved.
               </p>
             </div>
