@@ -52,10 +52,25 @@
       <div class="technologies h-56">
         Technologies
       </div>
-      <div class="footer h-24">
-        Footer
+    </div>
+
+    <!-- Footer -->
+    <div class="footer bg-gray-800">
+      <div class="px-6 xl:px-52 py-4">
+        <footer class="text-gray-200">
+          <div>
+            <div
+              class="py-6 mx-auto flex justify-center items-center sm:flex-row flex-col"
+            >
+              <p class="sm:ml-6 sm:mt-0 mt-4">
+                &copy; {{ getCurrentYear }} - Oketa Fred - All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
+    <!-- End Footer -->
   </div>
 </template>
 
@@ -97,6 +112,11 @@ export default {
         },
       ],
     };
+  },
+  computed: {
+    getCurrentYear() {
+      return new Date().getFullYear();
+    },
   },
 };
 </script>
