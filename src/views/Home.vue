@@ -4,9 +4,9 @@
       <div class="flex flex-col md:flex-row py-10">
         <div class="w-full">
           <img
-            class=" w-full md:w-72"
-            src="https://avatars.githubusercontent.com/u/26164755?v=4"
-            alt=""
+            class="w-full md:w-72 rounded shadow" style="width: 400px"
+            src="@/assets/images/oketafred.png"
+            alt="Oketa Fred Photo"
           />
         </div>
         <div class="w-full h-64 mt-6 md:mt-0 sm:mt-0">
@@ -23,7 +23,7 @@
             JavaScript, TypeScript and learning ethereum (solidity).<br />
             Let me help you grow your business to the moon 🚀.
           </p> -->
-            <p class="leading-relaxed">
+            <p class="leading-relaxed text-xl py-6">
               A Full-Stack Software Engineer with 3+ years of experience in
               PHP/Laravel/Vue. I solve problems using software and I love
               learning new skills. What is yours? Let me help you grow your
